@@ -10,5 +10,17 @@
 
 
 body {
-    background-color: var(--azul);
+    background-color: var(--violeta);
+}
+
+.background_imagem_lista{
+    list-style: none;
+}
+
+.background_imagem {
+    content: url(./images/bg-desktop.svg);
+    position: absolute;
+    height: 100vh;
+    width: 60vw;
+    padding-left: 10rem;
 }
