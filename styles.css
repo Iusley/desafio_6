@@ -17,10 +17,12 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: var(--primary-violet) url(./images/bg-desktop.svg);
+    background: var(--primary-violet);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: 65%;
+    background-position: 15rem 0;
     color: #fff;
     background-repeat: no-repeat;
-    
 }
 
 h1 {
@@ -30,11 +32,8 @@ h1 {
 /* Header section */
 
 header {
-    margin: 50px 80px;
-}
-
-header img {
-    width: 200px;
+    padding-left: 15rem;
+    padding-top: 3rem;
 }
 
 /* main section */
@@ -42,7 +41,13 @@ header img {
 main {
     display: flex;
     gap: 80px;
-    margin: 0 80px;
+    align-items: center;
+    padding-left: 15rem;
+    padding-top: 3rem;
+}
+
+.imagem_main {
+    width: 60rem;
 }
 
 .right {
@@ -55,22 +60,22 @@ main {
 }
 
 .right h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 600;
     word-spacing: 3px;
     padding-right: 150px;
     padding-bottom: 2rem;
-    width: 45rem;
+    width: 54rem;
 }
 
 .right p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     letter-spacing:1px;
     font-weight: 400;
     padding-right: 30px;
-    padding-bottom: 2rem;
-    width: 40rem;
+    padding-bottom: 3.5rem;
+    width: 43rem;
 }
 
 .right .btn {
@@ -93,11 +98,13 @@ main {
 
 /* footer section */
 
-footer {
+.redes_sociais {
     display: flex;
-    margin: 0 80px;
-    justify-content: end;
+    justify-content: flex-end;
+    padding-top: 4rem;
     gap: 20px;
+    padding-right: 30px;
+    width: 43rem;
 }
 
 .media-icon {
