@@ -19,7 +19,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: var(--primary-violet);
     background-image: url(./images/bg-desktop.svg);
-    background-size: 65%;
+    background-size: 70%;
     background-position: 15rem 0;
     color: #fff;
     background-repeat: no-repeat;
@@ -73,7 +73,6 @@ main {
     line-height: 1.8;
     letter-spacing:1px;
     font-weight: 400;
-    padding-right: 30px;
     padding-bottom: 3.5rem;
     width: 43rem;
 }
@@ -103,7 +102,6 @@ main {
     justify-content: flex-end;
     padding-top: 4rem;
     gap: 20px;
-    padding-right: 30px;
     width: 43rem;
 }
 
@@ -128,8 +126,26 @@ main {
 /* media queries */
 
 @media screen and (max-width:768px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-position: 0 0;
+        background-size: 150%;
+        color: #fff;
+        background-repeat: no-repeat;
+        width: 37rem;
+        
+    }
+    header {
+        padding: 3rem 0 3rem 3rem;
+        
+    }
     main {
+        text-align: center;
+        display: flex;
         flex-direction: column;
+        width: 45rem;
+        padding: 0;
+        margin: 0;
     }
 
     .left {
@@ -137,32 +153,41 @@ main {
     }
 
     .left img {
-        width: 70vw;
+        width: 37rem;
     }
 
     .right {
-        width: 70vw;
-        margin-bottom: 20px;
-        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
+        margin-bottom: 20px;
+        width: 37rem;
     }
 
     .right h1 {
-        padding-right: inherit;
+        font-size: 2rem;
+        width: 37rem;
+        margin: 0;
+        padding: 1rem;
     }
 
     .right p {
-        padding-right: inherit;
+        padding: 1rem;
+        width: 37rem;
+        text-align: center;
+        padding: 2rem 0;
+        
     }
 
     .right .btn {
         align-self: center;
-        margin: 20px 0;
     }
 
-    footer {
+    .redes_sociais {
         justify-content: center;
         margin-bottom: 20px;
+        width: 37rem;
     }
 
 }
@@ -170,7 +195,8 @@ main {
 @media screen and (max-width: 400px) {
 
     body {
-        background: var(--primary-violet) url(images/bg-mobile.svg);
+        background: var(--primary-violet);
+        background-image: url(./images/bg-mobile.svg);
         background-repeat: no-repeat;
     }
 
@@ -202,11 +228,11 @@ main {
     }
 
     .right .btn {
-        width: 70%;
+        width: 30%;
         height: 40px;
     }
 
-     footer {
+     .redes_sociais {
         margin-top: 20px;
      }
 
